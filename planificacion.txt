@@ -1,0 +1,100 @@
+Lunes 10 de febrero: Diseño y planificación
+✅ Investigación y referencia
+
+Busca inspiración en páginas de restaurantes temáticos.
+Revisa ejemplos de páginas minimalistas y elegantes.
+Define paleta de colores, tipografía y estructura general del sitio.
+✅ Mockup de la página principal
+
+Diseñar la estructura en Figma/Adobe XD/Canva.
+Incluir encabezado, menú desplegable, secciones de presentación de destinos y footer.
+✅ Estructura básica del proyecto
+
+Crear la carpeta del proyecto.
+Organizar archivos (index.html, styles.scss, bootstrap.min.css, script.js, imágenes, etc.).
+✅ Esbozo de la documentación
+
+Redactar una introducción del proyecto.
+Definir las secciones de la documentación.
+
+
+
+
+
+Martes 11 de febrero: Desarrollo de la página principal
+✅ HTML y Bootstrap
+
+Estructurar la página principal (index.html).
+Agregar secciones de presentación de los destinos con imágenes y texto.
+Insertar el footer con enlaces a TikTok, Instagram, contacto y preguntas frecuentes.
+✅ Menú lateral emergente
+
+Implementar con Bootstrap y JavaScript un menú desplegable lateral.
+✅ SCSS y Responsividad
+
+Crear el diseño responsive para móviles y tablets.
+Aplicar estilos elegantes y minimalistas con SCSS/SASS.
+✅ Pruebas y correcciones
+
+Revisar compatibilidad en móviles y navegadores.
+
+
+
+
+
+
+Miércoles 12 de febrero: Desarrollo de la página de la carta y restaurante 1
+✅ Página del restaurante 1
+
+Diseñar la estructura en HTML y estilizar con SCSS.
+Incluir imágenes, descripciones y botones de acceso a la carta y reservas.
+✅ Página de la carta
+
+Implementar la estructura con Bootstrap.
+Añadir platos con imágenes, descripciones, precios y alérgenos.
+✅ Accesibilidad y experiencia de usuario
+
+Comenzar a implementar pautas de accesibilidad (A, AA, AAA).
+
+
+
+
+
+Jueves 13 de febrero: Desarrollo de la página de reservas y optimización
+✅ Formulario de reserva
+
+Crear la estructura HTML con campos requeridos.
+Implementar validaciones con JavaScript.
+Estilizar la página con Bootstrap y SCSS.
+✅ Funcionalidad del formulario
+
+Al enviar, mostrar un mensaje emergente de confirmación.
+✅ Optimización y pruebas
+
+Revisar y corregir fallos en las páginas ya creadas.
+Ajustar detalles en el diseño responsive.
+
+
+
+
+
+Viernes 14 de febrero: Accesibilidad, documentación y empaquetado final
+✅ Revisión final de accesibilidad
+
+Incluir 6 pautas de accesibilidad (A, AA, AAA) en la documentación.
+Especificar 4 mejoras futuras con su implementación.
+✅ Finalización de la documentación
+
+Explicar estructura, herramientas utilizadas y decisiones de diseño.
+✅ Empaquetado y preparación para entrega
+
+Comprimir el proyecto (Nombre_Apellidos_Proyecto.zip).
+Revisar checklist de requisitos mínimos.
+
+
+
+
+Sábado 15 de febrero: Pruebas y preparación para la presentación
+✅ Revisión en diferentes dispositivos y navegadores
+✅ Pruebas de funcionalidad del formulario de reservas
+✅ Preparar explicación clara del proyecto para la exposición en clase

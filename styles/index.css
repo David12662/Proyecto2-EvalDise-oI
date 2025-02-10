@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Monomaniac+One&family=Nunito:wght@200..1000&family=Oswald:wght@200..700&family=Parkinsans:wght@300..800&display=swap');
+body{
+    background-image: url(./images/292da7a10aa30689d848871d2265e247.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+}
+.imglist {
+    height: 50px;
+    width: 50px;
+}
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+
+}
+
+
+header:after {
+    content: "";
+    display: block; 
+    background-color: white;
+    width: 90%; 
+    height: 1px;
+    position: absolute;
+    bottom: 0; 
+    left: 5%; 
+    z-index: 100; 
+}
+
+.centerdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 40vh;
+}
+
+.welcome{
+    font-family: "DynaPuff", serif;
+}
+
