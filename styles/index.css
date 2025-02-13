@@ -64,5 +64,72 @@ body {
 }
 
 .restaurant-card:hover{
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+    opacity: 0.6;
     
+}
+
+.offcanvas {
+    transition: transform 0.3s ease-in-out;
+}
+
+.custom-offcanvas {
+    width: 400px; 
+    background: linear-gradient(to right, #191919, #323247);
+    color: white;
+    font-family: 'Serif', serif;
+    display: flex;
+    text-align: right;
+    padding: 20px;
+}
+
+.logo-section {
+    margin-bottom: 20px; 
+}
+.offcanvas-body{
+    text-align: start;
+}
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.divider {
+    width: 1px; 
+    height: 100%; 
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    left: 50%; 
+    top: 0;
+    bottom: 0;
+}
+
+.destinations {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.city {
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.city:hover {
+    text-decoration: underline;
+}
+
+.plus {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.menubutton{
+    background-image: url('./images/menu.png');
+    background-size: cover;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    border: transparent;
 }
