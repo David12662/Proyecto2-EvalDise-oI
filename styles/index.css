@@ -1,135 +1,202 @@
 body {
-    background-color: #1e0b08;
-    color: white;
+  background-color: #1e0b08;
+  color: white;
 }
 
 .navbar {
-    width: 100%;
+  width: 95%;
 }
 
 .image-logo {
-    height: 70px;
+  height: 70px;
 }
 
 .menu {
-    text-align: center;
+  text-align: center;
 }
 
 .nav-item {
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
-    margin: 0 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin: 0 10px;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    background-color: wheat ; 
+    border: none; 
+}
+
+.dropdown-item {
+    background-color: wheat ; 
+    color: #1e0b08 ;
+}
+
+.dropdown-item:active,
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: wheat ; 
+    color: #1e0b08 ;
+}
+
+
+.dropdown-menu a{
+   color:  #1e0b08;
+
 }
 
 .menuimage {
-    height: 50px;
+  height: 50px;
 }
 
-
 @media (max-width: 768px) {
-    .menu {
-        flex-direction: column;
-        text-align: center;
-    }
+  .menu {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .letters {
-    font-size: 1.9rem;
+  font-size: 1.9rem;
 }
 
 .restaurant-card {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .restaurant-img {
-    width: 100%;
-    height: 600px; 
-    object-fit: cover; 
-    border-radius: 10px;
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .restaurant-name {
-    position: absolute;
-    bottom: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    padding: 5px 15px;
-    border-radius: 5px;
-    font-size: 1.9rem;
-    font-weight: bold;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 1.9rem;
+  font-weight: bold;
 }
 
-.restaurant-card:hover{
-    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
-    opacity: 0.6;
-    
-}
-
-.offcanvas {
-    transition: transform 0.3s ease-in-out;
+.restaurant-card:hover {
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+  opacity: 0.6;
+  cursor: default;
 }
 
 .custom-offcanvas {
-    width: 400px; 
-    background: linear-gradient(to right, #191919, #323247);
-    color: white;
-    font-family: 'Serif', serif;
-    display: flex;
-    text-align: right;
-    padding: 20px;
+  width: 400px;
+  background: wheat;
+  color: #1e0b08;
+  font-family: "Serif", serif;
+  display: flex;
+  text-align: right;
+  padding: 20px;
+}
+
+#menuOffcanvas {
+  animation: fade-incanvas 3s;
+}
+
+@keyframes fade-incanvas {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+a* {
+  text-decoration: none;
 }
 
 .logo-section {
-    margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
-.offcanvas-body{
-    text-align: start;
+.offcanvas-body {
+  text-align: start;
 }
 .logo {
-    font-size: 28px;
-    font-weight: bold;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .divider {
-    width: 1px; 
-    height: 100%; 
-    background-color: rgba(255, 255, 255, 0.3);
-    position: absolute;
-    left: 50%; 
-    top: 0;
-    bottom: 0;
+  width: 1px;
+  height: 20%;
+  background-color: #1e0b08;
+  position: absolute;
+  left: 55%;
+  top: 0;
+  bottom: 0;
 }
 
 .destinations {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 80%;
 }
 
 .city {
-    font-size: 22px;
-    font-weight: 500;
-    cursor: pointer;
+  font-size: 22px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  color: #1e0b08;
 }
 
-.city:hover {
-    text-decoration: underline;
+.terms {
+  font-size: 1.5rem;
 }
 
 .plus {
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 5px;
 }
-.menubutton{
-    background-image: url('./images/menu.png');
-    background-size: cover;
-    background-color: transparent;
-    height: 50px;
-    width: 50px;
-    border: transparent;
+.menubutton {
+  background-image: url("./images/menu.png");
+  background-size: cover;
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+  border: transparent;
 }
+.reserve a {
+  font-size: 1.5rem;
+}
+.footerdivider {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+.socialmedia a {
+  height: 50px;
+  width: 50px;
+  background-size: 100%;
+}
+
+.instagram {
+  background-image: url("./images/logotipo-de-instagram.png");
+}
+.x {
+  background-image: url("images/x.png");
+}
+

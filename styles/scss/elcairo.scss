@@ -1,0 +1,55 @@
+$primarybackground: #1e0b08;
+$secondarybackground: #f5deb3;
+$textprimarycolor: #ffffff;
+$textsecondarycolor: #1e0b08;
+
+body {
+  background-color: $primarybackground;
+}
+
+.navbar {
+  width: 95%;
+
+  .image-logo {
+    height: 70px;
+  }
+
+  .menu {
+    text-align: center;
+
+    .nav-item {
+        font-size: 2rem;
+        font-weight: bold;
+        color: $textprimarycolor;
+        margin: 0 10px;
+      
+
+        .nav-item:hover .dropdown-menu {
+        display: block;
+        }
+
+        .dropdown-menu {
+        background-color: $secondarybackground;
+        border: none;
+        }
+
+        .dropdown-item {
+        background-color: $secondarybackground;
+        color: $textsecondarycolor;
+        }
+
+        .dropdown-item:active,
+        .dropdown-item:hover,
+        .dropdown-item:focus {
+        background-color: $secondarybackground;
+        color: $textsecondarycolor;
+        }
+
+        .dropdown-menu a {
+        color: $textsecondarycolor;
+        }
+    }
+  }
+
+  
+}

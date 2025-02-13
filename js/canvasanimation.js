@@ -4,3 +4,4 @@ document.addEventListener('DOMContentLoaded', function () {
         cartOffcanvas.classList.add('fade-in');
     });
 });
+
