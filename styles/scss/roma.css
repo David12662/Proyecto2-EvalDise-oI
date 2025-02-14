@@ -1,0 +1,39 @@
+body {
+  background-color: #1e0b08;
+}
+
+.navbar {
+  width: 95%;
+}
+.navbar .image-logo {
+  height: 70px;
+}
+.navbar .menu {
+  text-align: center;
+}
+.navbar .menu .nav-item:hover .dropdown-menu {
+  display: block;
+}
+.navbar .menu .dropdown-menu {
+  background-color: wheat;
+  border: none;
+}
+.navbar .menu .dropdown-item {
+  background-color: wheat;
+  color: #1e0b08;
+}
+.navbar .menu .dropdown-item:active,
+.navbar .menu .dropdown-item:hover,
+.navbar .menu .dropdown-item:focus {
+  background-color: wheat;
+  color: #1e0b08;
+}
+.navbar .menu .dropdown-menu a {
+  color: #1e0b08;
+}
+.navbar .nav-item {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 10px;
+}/*# sourceMappingURL=roma.css.map */

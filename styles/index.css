@@ -53,6 +53,15 @@ body {
   height: 50px;
 }
 
+.menubutton {
+  background-image: url("./images/menu.png");
+  background-size: cover;
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+  border: transparent;
+}
+
 @media (max-width: 768px) {
   .menu {
     flex-direction: column;
@@ -170,14 +179,7 @@ a* {
   font-weight: bold;
   margin-left: 5px;
 }
-.menubutton {
-  background-image: url("./images/menu.png");
-  background-size: cover;
-  background-color: transparent;
-  height: 50px;
-  width: 50px;
-  border: transparent;
-}
+
 .reserve a {
   font-size: 1.5rem;
 }

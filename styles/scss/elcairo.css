@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Lavishly+Yours&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  background-color: #1e0b08;
+}
+
+.navbar {
+  width: 95%;
+}
+.navbar .image-logo {
+  height: 70px;
+}
+.navbar .menu {
+  text-align: center;
+}
+.navbar .menu .nav-item {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 10px;
+}
+.navbar .menu .nav-item .nav-item:hover .dropdown-menu {
+  display: block;
+}
+.navbar .menu .nav-item .dropdown-menu {
+  background-color: #f5deb3;
+  border: none;
+}
+.navbar .menu .nav-item .dropdown-item {
+  background-color: #f5deb3;
+  color: #1e0b08;
+}
+.navbar .menu .nav-item .dropdown-item:active,
+.navbar .menu .nav-item .dropdown-item:hover,
+.navbar .menu .nav-item .dropdown-item:focus {
+  background-color: #f5deb3;
+  color: #1e0b08;
+}
+.navbar .menu .nav-item .dropdown-menu a {
+  color: #1e0b08;
+}
+.navbar .menu .nav-item .menubutton {
+  background-image: url("../images/menu.png");
+  background-size: cover;
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+  border: transparent;
+}
+
+.custom-offcanvas {
+  width: 400px;
+  background: wheat;
+  color: #1e0b08;
+  font-family: "Serif", serif;
+  display: flex;
+  text-align: right;
+  padding: 20px;
+}
+.custom-offcanvas #menuOffcanvas {
+  animation: fade-incanvas 3s;
+}
+@keyframes fade-incanvas {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.custom-offcanvas .offcanvas-body {
+  text-align: start;
+}
+.custom-offcanvas .offcanvas-body .logo-section {
+  margin-bottom: 20px;
+}
+.custom-offcanvas .offcanvas-body .logo-section .logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+.custom-offcanvas .offcanvas-body .logo-section .terms {
+  font-size: 1.5rem;
+}
+.custom-offcanvas .offcanvas-body .divider {
+  width: 1px;
+  height: 20%;
+  background-color: #1e0b08;
+  position: absolute;
+  left: 55%;
+  top: 0;
+  bottom: 0;
+}
+.custom-offcanvas .offcanvas-body .destinations {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 80%;
+}
+.custom-offcanvas .offcanvas-body .destinations .city {
+  font-size: 22px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  color: #1e0b08;
+}
+
+.imagediv {
+  color: #ffffff;
+}
+
+.link {
+  font-size: 1.5rem;
+  font-family: "Geist Mono", serif;
+  margin-left: 5px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.launch,
+.dinner {
+  font-size: 1.5rem;
+  font-family: "Geist Mono", serif;
+  margin-left: 5px;
+  text-decoration: none;
+  color: #ffffff;
+}/*# sourceMappingURL=elcairo.css.map */
