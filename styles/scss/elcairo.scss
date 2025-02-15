@@ -87,8 +87,11 @@ body, html {
 
 .firstdiv{
   @include textschedule()
-
 }
+.firstdiv a {
+  @include textschedule()
+
+} 
 
 .menubutton {
   background-image: url("../images/menu.png");
@@ -195,6 +198,7 @@ body, html {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     z-index: 1;
+    pointer-events: none;
   }
 }
 
