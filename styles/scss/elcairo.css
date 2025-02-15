@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Lavishly+Yours&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-body {
+@import url("https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Pochaevsk&family=Roboto:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap");
+body, html {
   background-color: #1e0b08;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -17,28 +19,46 @@ body {
   font-weight: bold;
   color: #ffffff;
   margin: 0 10px;
+  position: relative;
 }
-.navbar .menu .nav-item .nav-item:hover .dropdown-menu {
+.navbar .menu .nav-item:hover > .dropdown-menu {
   display: block;
+}
+.navbar .menu .nav-item a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+.navbar .menu .nav-item a:hover {
+  color: gold;
 }
 .navbar .menu .nav-item .dropdown-menu {
   background-color: #f5deb3;
   border: none;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
 }
 .navbar .menu .nav-item .dropdown-item {
   background-color: #f5deb3;
   color: #1e0b08;
+  transition: background 0.3s, color 0.3s;
 }
-.navbar .menu .nav-item .dropdown-item:active,
-.navbar .menu .nav-item .dropdown-item:hover,
-.navbar .menu .nav-item .dropdown-item:focus {
-  background-color: #f5deb3;
-  color: #1e0b08;
+.navbar .menu .nav-item .dropdown-item:hover {
+  background-color: #efca86;
+  color: black;
 }
-.navbar .menu .nav-item .dropdown-menu a {
-  color: #1e0b08;
+
+.firstdiv {
+  font-size: 1.5rem;
+  font-family: "Geist Mono", serif;
+  margin-left: 5px;
+  text-decoration: none;
+  color: #ffffff;
 }
-.navbar .menu .nav-item .menubutton {
+
+.menubutton {
   background-image: url("../images/menu.png");
   background-size: cover;
   background-color: transparent;
@@ -108,6 +128,88 @@ body {
 
 .imagediv {
   color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 95vw;
+  height: 100vh;
+  margin: 2%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+}
+.imagediv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.3), #1e0b08);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  z-index: 1;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-family: "Playfair Display", serif;
+}
+.carousel-caption h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.carousel-caption h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.carousel-caption .links {
+  margin-top: 10px;
+}
+.carousel-caption .links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  margin: 0 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid white;
+  transition: 0.3s;
+}
+.carousel-caption .links a:hover {
+  border-bottom: 2px solid gold;
+}
+
+.container1 h1 {
+  font-size: 3rem;
+  font-family: "Monsieur La Doulaise", serif;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 5px;
+}
+.container1 p {
+  font-family: "Teko", serif;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.container2 h3 {
+  font-size: 3rem;
+  font-family: "Monsieur La Doulaise", serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+.container2 h2 {
+  font-family: "Monsieur La Doulaise", serif;
+  font-size: 2.5rem;
+}
+.container2 a {
+  font-family: "Teko", serif;
+  font-size: 2rem;
 }
 
 .link {
@@ -125,4 +227,22 @@ body {
   margin-left: 5px;
   text-decoration: none;
   color: #ffffff;
+}
+
+.footerdivider {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+.socialmedia a {
+  height: 50px;
+  width: 50px;
+  background-size: 100%;
+}
+.socialmedia a .instagram {
+  background-image: url("../images/logotipo-de-instagram.png");
+}
+.socialmedia a .x {
+  background-image: url("../images/x.png");
 }/*# sourceMappingURL=elcairo.css.map */

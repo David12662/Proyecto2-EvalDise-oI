@@ -1,13 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Lavishly+Yours&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Pochaevsk&family=Roboto:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap');
 $primarybackground: #1e0b08;
 $secondarybackground: #f5deb3;
 $textprimarycolor: #ffffff;
 $textsecondarycolor: #1e0b08;
-$font1:"Geist Mono", serif;;
+$font1: "Geist Mono", serif;
+$titlefont: "Monsieur La Doulaise", serif;
+$fontbody: "Teko", serif;
 
-body {
+
+body, html {
   background-color: $primarybackground;
+  overflow-x: hidden;
 }
+
+@mixin texttittle {
+  font-size: 3rem;
+  font-family: $titlefont;
+  color: $textprimarycolor;
+  text-decoration: none;
+
+}
+
+@mixin textschedule {
+  font-size: 1.5rem;
+  font-family: $font1;
+  margin-left: 5px;
+  text-decoration: none;
+  color: $textprimarycolor;
+}
+
 
 .navbar {
   width: 95%;
@@ -20,48 +42,61 @@ body {
     text-align: center;
 
     .nav-item {
-        font-size: 2rem;
-        font-weight: bold;
-        color: $textprimarycolor;
-        margin: 0 10px;
-      
+      font-size: 2rem;
+      font-weight: bold;
+      color: $textprimarycolor;
+      margin: 0 10px;
+      position: relative;
 
-        .nav-item:hover .dropdown-menu {
+      &:hover > .dropdown-menu {
         display: block;
-        }
+      }
 
-        .dropdown-menu {
+      a {
+        color: $textprimarycolor;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+          color: gold;
+        }
+      }
+
+      .dropdown-menu {
         background-color: $secondarybackground;
         border: none;
-        }
+        display: none; 
+        position: absolute;
+        top: 100%;
+        left: 0;
+      }
 
-        .dropdown-item {
+      .dropdown-item {
         background-color: $secondarybackground;
         color: $textsecondarycolor;
-        }
+        transition: background 0.3s, color 0.3s;
 
-        .dropdown-item:active,
-        .dropdown-item:hover,
-        .dropdown-item:focus {
-        background-color: $secondarybackground;
-        color: $textsecondarycolor;
+        &:hover {
+          background-color: darken($secondarybackground, 10%);
+          color: darken($textsecondarycolor, 20%);
         }
-
-        .dropdown-menu a {
-        color: $textsecondarycolor;
-        }
-
-        .menubutton {
-          background-image: url("../images/menu.png");
-          background-size: cover;
-          background-color: transparent;
-          height: 50px;
-          width: 50px;
-          border: transparent;
-        }
+      }
     }
   }
+}
 
+.firstdiv{
+  @include textschedule()
+
+}
+
+.menubutton {
+  background-image: url("../images/menu.png");
+  background-size: cover;
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+  border: transparent;
 }
 
 
@@ -77,14 +112,16 @@ body {
   #menuOffcanvas {
     animation: fade-incanvas 3s;
   }
-  
+
   @keyframes fade-incanvas {
     0% {
       opacity: 0;
     }
+
     50% {
       opacity: 0.7;
     }
+
     100% {
       opacity: 1;
     }
@@ -100,6 +137,7 @@ body {
         font-size: 28px;
         font-weight: bold;
       }
+
       .terms {
         font-size: 1.5rem;
       }
@@ -129,31 +167,137 @@ body {
         color: $primarybackground;
       }
     }
-    
+
   }
-  
+
 }
 
-.imagediv{
+.imagediv {
   color: $textprimarycolor;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 95vw;
+  height: 100vh;
+  margin: 2%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.3), $primarybackground);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 1;
+  }
 }
 
-@mixin textschedule{
-  font-size: 1.5rem;
-  font-family: $font1;
-  margin-left: 5px;
-  text-decoration: none;
-  color: $textprimarycolor;
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-family: 'Playfair Display', serif;
+
+
+  h1 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  .links {
+    margin-top: 10px;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.2rem;
+      margin: 0 10px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid white;
+      transition: 0.3s;
+
+      &:hover {
+        border-bottom: 2px solid gold;
+      }
+    }
+  }
 }
 
-.link{
+
+
+
+.container1 {
+  h1 {
+    @include texttittle();
+    margin-left: 5px;
+  }
+
+  p {
+    font-family: $fontbody;
+    font-size: 2rem;
+    color: $textprimarycolor;
+  }
+
+}
+
+.container2 {
+  h3 {
+    @include texttittle();
+  }
+
+  h2 {
+    font-family: $titlefont;
+    font-size: 2.5rem;
+  }
+
+  a {
+    font-family: $fontbody;
+    font-size: 2rem;
+  }
+}
+
+.link {
   @include textschedule()
 }
 
 
 .launch,
-.dinner{
+.dinner {
   @include textschedule()
+}
+
+.footerdivider {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+.socialmedia a {
+  height: 50px;
+  width: 50px;
+  background-size: 100%;
+
+  .instagram {
+    background-image: url("../images/logotipo-de-instagram.png");
+  }
+  .x {
+    background-image: url("../images/x.png");
+  }
 }
 
 

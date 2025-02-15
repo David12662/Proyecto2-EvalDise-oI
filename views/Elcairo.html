@@ -18,9 +18,10 @@
     <header>
         <nav class="navbar navbar-light py-4">
             <div class="container d-flex justify-content-between">
-
                 <div>
-                    <img class="image-logo" src="../styles/images/logo.png" alt="Pirueta">
+                    <a  href="../index.html">
+                        <img class="image-logo" src="../styles/images/logo.png" alt="Pirueta">
+                    </a>
                 </div>
 
 
@@ -56,33 +57,76 @@
         </nav>
     </header>
     <main>
-        <div class="d-flex justify-content-between w-100">
+        <div class="d-flex justify-content-between w-100 firstdiv">
             <p class="ms-5">Pirueta El cairo</p>
             <div class="d-flex gap-5">
                 <p class="mx-5">Galeria</p>
                 <p class="mx-5">Carta</p>
             </div>
         </div>
-        <div class="bg-dark text-center imagediv">
-            <div class="text-center">
-                <h1>El cairo</h1>
+        <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="500">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="imagediv" style="background-image: url('../styles/images/elcairoimagen1.png');"></div>
+                    <div class="carousel-caption">
+                        <h2>Pirueta</h2>
+                        <h1>El cairo</h1>
+                        <div class="links">
+                            <a href="#">Reservar</a>
+                            <a href="#">Carta</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="imagediv" style="background-image: url('../styles/images/elcairoimagen2.png');"></div>
+                    <div class="carousel-caption">
+                        <h2>Pirueta</h2>
+                        <h1>El cairo</h1>
+                        <div class="links">
+                            <a href="#">Reservar</a>
+                            <a href="#">Carta</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="d-flex justify-content-around align-items-center text-center">
-                <h2>Reservar</h2>
-                <h2>Carta</h2>
-            </div>
-            <h2>Adentrate en El Cairo</h2>
         </div>
         <div>
-            <div class="text-center">
+            <div class="container text-center container1">
                 <h1>Te esperamos ven a vernos</h1>
+                <p>En el corazón de la ciudad que nunca duerme, donde las arenas del tiempo se entrelazan con la
+                    modernidad, Pirueta El Cairo se erige como un templo culinario que rinde homenaje a la exquisita
+                    gastronomía egipcia. Aquí, cada plato es un relato, cada sabor una travesía y cada bocado una
+                    conexión con la historia milenaria de la capital egipcia.
+
+                    Nuestro menú ha sido diseñado para transportar a nuestros comensales a los mercados bulliciosos de
+                    Khan El Khalili, a las orillas del majestuoso Nilo y a los palacios de los antiguos faraones. Entre
+                    nuestras especialidades, destacamos el Koshari, un festín de lentejas, pasta y arroz coronado con
+                    una salsa de tomate especiada y crujientes cebollas caramelizadas; el Feseekh, un manjar ancestral
+                    de pescado fermentado que desafía los paladares más osados; y el icónico Molokhia, una sopa verde
+                    aterciopelada con un aroma embriagador de ajo y cilantro, servida con suculenta carne de conejo o
+                    pollo.
+
+                    En Pirueta El Cairo, cada detalle está cuidadosamente diseñado para sumergirle en la opulencia de la
+                    gastronomía egipcia, desde la refinada presentación de nuestros platos hasta la ambientación que
+                    evoca los salones de la realeza. Con una bodega de vinos selectos y cócteles inspirados en las
+                    especias del desierto, su experiencia será más que una cena: será un viaje sensorial que despertará
+                    sus sentidos.
+
+                    Descubra el arte de la cocina egipcia como nunca antes lo ha probado. Bienvenidos a Pirueta El
+                    Cairo, donde la tradición y la sofisticación se fusionan en un solo destino gastronómico.</p>
             </div>
-            <div class="container">
+            <div class="container text-center text-white container2 mt-5 ">
+                <h3>Te esperamos</h3>
+                <h2>Ven a Vivirlo</h2>
+                <a>Reservar</a>
+
+            </div>
+            <div class="container mt-5">
                 <div class="d-flex text-white justify-content-around">
-                    <div>
+                    <div class="container">
                         <h3>Cómo llegar:</h3>
-                        <a class="mt-5 link" href="https://maps.app.goo.gl/xitjccsykkCeVkMn6" target="_blank" rel="noopener noreferrer">Gran
-                            Vía Marqués del Turia, 59 46005 Valencia</a>
+                        <a class="mt-5 link" href="https://www.google.com/maps/place/Passeig+de+Nept%C3%BA,+Poblats+Mar%C3%ADtims,+46011+Val%C3%A8ncia/@39.4644423,-0.3248961,18z/data=!3m1!4b1!4m6!3m5!1s0xd60484210eeb6dd:0x67fadfdbc1d61a4b!8m2!3d39.4644406!4d-0.3238135!16s%2Fg%2F11xfpqs4_?hl=en&entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D" target="_blank"
+                            rel="noopener noreferrer">Passeig de Neptú</a>
                         <div class="mt-5 hours">
                             <div class="text-center">
                                 <h2>Horarios</h2>
@@ -101,8 +145,37 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="mapouter justify-content-center d-flex align-items-center mt-5">
+                            <div class="gmap_canvas"><iframe width="815" height="575" id="gmap_canvas"
+                                    src="https://maps.google.com/maps?q=Av.+Neptuno+Valencia&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                                    href="https://online-timer.me/"></a><br><a
+                                    href="https://online.stopwatch-timer.net/"></a><br>
+                                <style>
+                                    .mapouter {
+                                        position: relative;
+                                        left: 25%;
+                        
+                                        text-align: right;
+                                        height: 575px;
+                                        width: 700px;
+                                        border-radius: 10px;
+                                    }
+                                </style><a href="https://www.embedmaps.co">custom google maps embed</a>
+                                <style>
+                                    .gmap_canvas {
+                                        overflow: hidden;
+                                        background: none !important;
+                                        height: 575px;
+                                        width: 700px;
+                                        border-radius: 10px; 
+                                        
+                                    }
+                                </style>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mapouter"><div class="gmap_canvas"><iframe width="815" height="575" id="gmap_canvas" src="https://maps.google.com/maps?q=Av.+Neptuno+Valencia&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://online-timer.me/"></a><br><a href="https://online.stopwatch-timer.net/"></a><br><style>.mapouter{position: relative;text-align: right;height: 575px;width: 815px;}</style><a href="https://www.embedmaps.co">custom google maps embed</a><style>.gmap_canvas{overflow: hidden;background: none !important;height: 575px;width: 815px;}</style></div></div>
                 </div>
             </div>
         </div>
@@ -125,9 +198,48 @@
             </div>
         </div>
         </div>
+        <div class="mt-4 footerdivider"></div>
     </main>
-    <footer>
-        <!-- place footer here -->
+    <footer class="container text-center d-flex justify-content-between text-white mt-3 ">
+        <div>
+            <img class="image-logo" src="../styles/images/logo.png" alt="Pirueta">
+            <div class="d-flex justify-content-around mt-2  socialmedia">
+                <a class="instagram"></a>
+                <a class="x"></a>
+            </div>
+        </div>
+        <div>
+            <h3>Contact</h3>
+            <h6>Pirueta,Sa</h6>
+        </div>
+        <div>
+            <h3>Info</h3>
+            <h6>Home</h6>
+            <h6>About</h6>
+            <h6>Shop</h6>
+        </div>
+        <div>
+            <h3>Categories</h3>
+            <h6>Pantry Essential</h6>
+            <h6>Gourmet</h6>
+            <h6>CockTail</h6>
+            <h6>Liquor</h6>
+        </div>
+        <div>
+            <h3>Account</h3>
+            <h6>My account</h6>
+            <h6>Cart</h6>
+            <h6>Checkout</h6>
+        </div>
+        <div>
+            <h3>The Fine Print</h3>
+            <h6>Terms of Service</h6>
+            <h6>Privacy Policy</h6>
+            <h6>Delivery +</h6>
+            <h6>Payment</h6>
+        </div>
+
+
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
