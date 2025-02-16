@@ -1,5 +1,9 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Lavishly+Yours&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Pochaevsk&family=Roboto:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap");
+body,
+html {
   background-color: #1e0b08;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -7,33 +11,284 @@ body {
 }
 .navbar .image-logo {
   height: 70px;
+  mix-blend-mode: hard-light;
 }
 .navbar .menu {
   text-align: center;
 }
-.navbar .menu .nav-item:hover .dropdown-menu {
-  display: block;
-}
-.navbar .menu .dropdown-menu {
-  background-color: wheat;
-  border: none;
-}
-.navbar .menu .dropdown-item {
-  background-color: wheat;
-  color: #1e0b08;
-}
-.navbar .menu .dropdown-item:active,
-.navbar .menu .dropdown-item:hover,
-.navbar .menu .dropdown-item:focus {
-  background-color: wheat;
-  color: #1e0b08;
-}
-.navbar .menu .dropdown-menu a {
-  color: #1e0b08;
-}
-.navbar .nav-item {
+.navbar .menu .nav-item {
   font-size: 2rem;
   font-weight: bold;
   color: #ffffff;
   margin: 0 10px;
+  position: relative;
+}
+.navbar .menu .nav-item:hover > .dropdown-menu {
+  display: block;
+}
+.navbar .menu .nav-item .nav-link {
+  position: relative;
+  transition: color 0.3s ease-in-out;
+  color: #ffffff;
+  text-decoration: none;
+}
+.navbar .menu .nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: gold;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+.navbar .menu .nav-item .nav-link:hover {
+  color: gold;
+}
+.navbar .menu .nav-item .nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+.navbar .menu .nav-item .dropdown-menu {
+  background-color: #f5deb3;
+  border: none;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.navbar .menu .nav-item .dropdown-item {
+  background-color: #f5deb3;
+  color: #1e0b08;
+  transition: background 0.3s, color 0.3s;
+}
+.navbar .menu .nav-item .dropdown-item:hover {
+  background-color: #efca86;
+  color: black;
+}
+
+.firstdiv {
+  font-size: 1.5rem;
+  font-family: "Geist Mono", serif;
+  margin-left: 5px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.firstdiv a {
+  font-size: 1.5rem;
+  font-family: "Geist Mono", serif;
+  margin-left: 5px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.menubutton {
+  background-image: url("../images/menu.png");
+  background-size: cover;
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+  border: transparent;
+}
+
+.custom-offcanvas {
+  width: 400px;
+  background: wheat;
+  color: #1e0b08;
+  font-family: "Serif", serif;
+  display: flex;
+  text-align: right;
+  padding: 20px;
+}
+.custom-offcanvas #menuOffcanvas {
+  animation: fade-incanvas 3s;
+}
+.custom-offcanvas.show {
+  transform: translateX(0);
+}
+.custom-offcanvas .destinations > a {
+  font-size: 22px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  color: #1e0b08;
+  transition: color 0.3s ease-in-out;
+}
+.custom-offcanvas .destinations > a:hover {
+  color: darkred;
+}
+
+@keyframes fade-incanvas {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.offcanvas-body {
+  text-align: start;
+}
+.offcanvas-body .logo-section {
+  margin-bottom: 20px;
+}
+.offcanvas-body .logo-section .logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+.offcanvas-body .logo-section .terms {
+  font-size: 1.5rem;
+}
+.offcanvas-body .divider {
+  width: 1px;
+  height: 20%;
+  background-color: #1e0b08;
+  position: absolute;
+  left: 55%;
+  top: 0;
+  bottom: 0;
+}
+.offcanvas-body .destinations {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 80%;
+}
+.offcanvas-body .destinations .city {
+  font-size: 22px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  color: #1e0b08;
+}
+
+.imagediv {
+  color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 95vw;
+  height: 100vh;
+  margin: 2%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+}
+.imagediv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.3), #1e0b08);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-family: "Playfair Display", serif;
+}
+.carousel-caption h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.carousel-caption h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.carousel-caption .links {
+  margin-top: 10px;
+}
+.carousel-caption .links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  margin: 0 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid white;
+  transition: 0.3s;
+}
+.carousel-caption .links a:hover {
+  border-bottom: 2px solid gold;
+}
+
+.container1 h1 {
+  font-size: 3rem;
+  font-family: "Monsieur La Doulaise", serif;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 5px;
+}
+.container1 p {
+  font-family: "Teko", serif;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.container2 h3 {
+  font-size: 3rem;
+  font-family: "Monsieur La Doulaise", serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+.container2 h2 {
+  font-family: "Monsieur La Doulaise", serif;
+  font-size: 2.5rem;
+}
+.container2 a {
+  font-family: "Teko", serif;
+  font-size: 2rem;
+}
+
+.link {
+  font-size: 1.5rem;
+  font-family: "Geist Mono", serif;
+  margin-left: 5px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.launch,
+.dinner {
+  font-size: 1.5rem;
+  font-family: "Geist Mono", serif;
+  margin-left: 5px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footerdivider {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+.image-logo {
+  height: 70px;
+  mix-blend-mode: hard-light;
+}
+
+.socialmedia a {
+  height: 50px;
+  width: 50px;
+  background-size: 100%;
+}
+.socialmedia a .instagram {
+  background-image: url("../images/logotipo-de-instagram.png");
+}
+.socialmedia a .x {
+  background-image: url("../images/x.png");
 }/*# sourceMappingURL=roma.css.map */

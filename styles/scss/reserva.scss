@@ -1,0 +1,143 @@
+
+$text-color: white;
+$background-color: #1e0b08;
+$form-bg-color: #C5A483;
+$border-radius: 5px;
+$spacing: 10px;
+$fontbody: "Teko", serif;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin form-style {
+  background-color: $form-bg-color;
+  border-radius: $border-radius;
+  font-family: $fontbody;
+  color: gold;
+  font-size: 1.3rem;
+  padding: $spacing;
+  border: none;
+
+  &:focus {
+    outline: none;
+    background-color: darken($form-bg-color, 10%);
+  }
+}
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+  @include flex-center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+select {
+  color: $text-color; 
+  background-color: $form-bg-color;
+
+  option {
+    color: gold !important;
+    background-color: $form-bg-color !important;
+  }
+}
+
+[role="main"] {
+  width: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: $border-radius;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.btnvolver{
+  background-color: $form-bg-color;
+  border: none;
+  border-radius: $border-radius;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease, box-shadow 0.3s ease;
+  margin-top: 20px;
+  &:hover {
+    background-color: lighten($form-bg-color, 10%);
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(197, 164, 131, 0.5);
+  }
+
+  &:active {
+    background-color: darken($form-bg-color, 15%);
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(197, 164, 131, 0.3);
+  }
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  [class*="group"] {
+    margin-bottom: $spacing;
+
+    label {
+      font-weight: bold;
+    }
+
+    [type="text"],
+    [type="email"],
+    [type="tel"],
+    [type="number"],
+    [type="date"],
+    [type="time"],
+    select {
+      @include form-style;
+      width: 100%;
+      padding: 8px;
+    }
+  }
+
+  [type="checkbox"] {
+    margin-left: 0;
+    margin-right: 5px;
+  }
+
+  [class*="check"] {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row;
+  }
+
+  [type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: $form-bg-color;
+    border: none;
+    border-radius: $border-radius;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease, box-shadow 0.3s ease;
+  
+    &:hover {
+      background-color: lighten($form-bg-color, 10%);
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(197, 164, 131, 0.5);
+    }
+  
+    &:active {
+      background-color: darken($form-bg-color, 15%);
+      transform: scale(0.95);
+      box-shadow: 0 2px 5px rgba(197, 164, 131, 0.3);
+    }
+  }
+}
+
+[hidden],
+.hidden {
+  display: none !important;
+}

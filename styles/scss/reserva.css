@@ -1,0 +1,122 @@
+body {
+  background-color: #1e0b08;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+select {
+  color: white;
+  background-color: #C5A483;
+}
+select option {
+  color: gold !important;
+  background-color: #C5A483 !important;
+}
+
+[role=main] {
+  width: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btnvolver {
+  background-color: #C5A483;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease, box-shadow 0.3s ease;
+  margin-top: 20px;
+}
+.btnvolver:hover {
+  background-color: #d5bea6;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(197, 164, 131, 0.5);
+}
+.btnvolver:active {
+  background-color: #ab7e50;
+  transform: scale(0.95);
+  box-shadow: 0 2px 5px rgba(197, 164, 131, 0.3);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form [class*=group] {
+  margin-bottom: 10px;
+}
+form [class*=group] label {
+  font-weight: bold;
+}
+form [class*=group] [type=text],
+form [class*=group] [type=email],
+form [class*=group] [type=tel],
+form [class*=group] [type=number],
+form [class*=group] [type=date],
+form [class*=group] [type=time],
+form [class*=group] select {
+  background-color: #C5A483;
+  border-radius: 5px;
+  font-family: "Teko", serif;
+  color: gold;
+  font-size: 1.3rem;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  padding: 8px;
+}
+form [class*=group] [type=text]:focus,
+form [class*=group] [type=email]:focus,
+form [class*=group] [type=tel]:focus,
+form [class*=group] [type=number]:focus,
+form [class*=group] [type=date]:focus,
+form [class*=group] [type=time]:focus,
+form [class*=group] select:focus {
+  outline: none;
+  background-color: #b58b60;
+}
+form [type=checkbox] {
+  margin-left: 0;
+  margin-right: 5px;
+}
+form [class*=check] {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+}
+form [type=submit] {
+  width: 100%;
+  padding: 10px;
+  background-color: #C5A483;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease, box-shadow 0.3s ease;
+}
+form [type=submit]:hover {
+  background-color: #d5bea6;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(197, 164, 131, 0.5);
+}
+form [type=submit]:active {
+  background-color: #ab7e50;
+  transform: scale(0.95);
+  box-shadow: 0 2px 5px rgba(197, 164, 131, 0.3);
+}
+
+[hidden],
+.hidden {
+  display: none !important;
+}/*# sourceMappingURL=reserva.css.map */

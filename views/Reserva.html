@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/scss/reserva.css">
+</head>
+<body>
+    <div class="container">
+        <a href="javascript:history.back()" class="btn mb-3 btnvolver">
+            ← Volver
+        </a>
+        <h1 class="text-center">Reserva</h1>
+        <form>
+            <div class="form-group">
+                <label for="destino">Destino</label>
+                <select class="form-control" id="destino" required>
+                    <option value="">Seleccione un destino</option>
+                    <option value="destino1">Roma</option>
+                    <option value="destino2">São Paulo</option>
+                    <option value="destino3">El cairo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="personas">Número de personas</label>
+                <input type="number" class="form-control" id="personas" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="zona">Zona</label>
+                <select class="form-control" id="zona" required>
+                    <option value="">Seleccione una zona</option>
+                    <option value="terraza">Terraza</option>
+                    <option value="interior">Interior</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="hora">Hora</label>
+                <input type="time" class="form-control" id="hora" required>
+            </div>
+            <div class="form-group">
+                <label for="dia">Día</label>
+                <input type="date" class="form-control" id="dia" required>
+            </div>
+            <div id="additional-fields" class="hidden">
+                <div class="form-group">
+                    <label for="intolerancia" id="intolerancia-label">¿Tiene alguna intolerancia alimenticia?</label>
+                    <input type="text" class="form-control" id="intolerancia">
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" class="form-control" id="apellidos" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono" required>
+                </div>
+            </div>
+            <div class="form-group form-check  d-flex  ">
+                <input type="checkbox" class="form-check-input" id="aceptar" required>
+                <label class="form-check-label" for="aceptar">Acepto el tratamiento de datos y políticas de privacidad</label>
+            </div>
+            <button type="submit" class="btn" onclick="return mostrarMensaje(event)">Reservar</button>
+        </form>
+    </div>
+
+    <script>
+        document.querySelectorAll('#destino, #personas, #zona, #hora, #dia').forEach(function(element) {
+            element.addEventListener('change', function() {
+                var destino = document.getElementById('destino').value;
+                var personas = document.getElementById('personas').value;
+                var zona = document.getElementById('zona').value;
+                var hora = document.getElementById('hora').value;
+                var dia = document.getElementById('dia').value;
+
+                if (destino && personas && zona && hora && dia) {
+                    document.getElementById('additional-fields').classList.remove('hidden');
+                } else {
+                    document.getElementById('additional-fields').classList.add('hidden');
+                }
+            });
+        });
+
+        function mostrarMensaje(event) {
+        event.preventDefault();
+    
+    if (document.getElementById('intolerancia').value == '' || 
+        document.getElementById('nombre').value == '' || 
+        document.getElementById('apellidos').value == '' || 
+        document.getElementById('email').value == '' || 
+        document.getElementById('telefono').value == '') {
+        alert('Por favor, rellene todos los campos');
+    } else {
+        alert('Reserva completada');
+        window.location.href = '../Index.html'; 
+    }
+}
+
+
+    </script>
+</body>
+</html>

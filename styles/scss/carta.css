@@ -23,6 +23,7 @@ main {
 }
 .navbar .image-logo {
   height: 70px;
+  mix-blend-mode: hard-light;
 }
 .navbar .menu {
   text-align: center;
@@ -61,6 +62,27 @@ main {
 .navbar .menu .nav-item .dropdown-item:hover {
   background-color: #efca86;
   color: black;
+}
+
+.btnvolver {
+  background-color: #C5A483;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease, box-shadow 0.3s ease;
+  margin-top: 20px;
+}
+.btnvolver:hover {
+  background-color: #d5bea6;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(197, 164, 131, 0.5);
+}
+.btnvolver:active {
+  background-color: #ab7e50;
+  transform: scale(0.95);
+  box-shadow: 0 2px 5px rgba(197, 164, 131, 0.3);
 }
 
 .menubutton {

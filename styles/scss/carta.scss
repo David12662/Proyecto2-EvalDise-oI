@@ -13,9 +13,10 @@ html {
     overflow-x: hidden;
 }
 
-main{
+main {
     animation: fade-in 2s ease-in-out;
 }
+
 @keyframes fade-in {
     0% {
         opacity: 0;
@@ -24,7 +25,7 @@ main{
     100% {
         opacity: 1;
     }
-    
+
 }
 
 .navbar {
@@ -32,6 +33,7 @@ main{
 
     .image-logo {
         height: 70px;
+        mix-blend-mode: hard-light;
     }
 
     .menu {
@@ -78,6 +80,30 @@ main{
                 }
             }
         }
+    }
+}
+
+
+.btnvolver {
+    background-color: $cardbackground;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+
+    &:hover {
+        background-color: lighten($cardbackground, 10%);
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(197, 164, 131, 0.5);
+    }
+
+    &:active {
+        background-color: darken($cardbackground, 15%);
+        transform: scale(0.95);
+        box-shadow: 0 2px 5px rgba(197, 164, 131, 0.3);
     }
 }
 
@@ -162,8 +188,9 @@ main{
     }
 
 }
-%menu-card{
-    
+
+%menu-card {
+
     background-color: $cardbackground;
 
     .card-title {
@@ -171,7 +198,7 @@ main{
         font-size: 2rem;
         color: $textsecondarycolor;
     }
-    
+
     .card-text {
         font-family: $fontbody;
         font-size: 1.5rem;
@@ -187,7 +214,7 @@ main{
     border-radius: 10px;
     transition: box-shadow 0.3s ease-in-out;
 
-    img{
+    img {
         width: 100%;
         height: 200px;
         object-fit: cover;
