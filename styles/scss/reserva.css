@@ -1,6 +1,6 @@
 body {
   background-color: #1e0b08;
-  color: white;
+  color: gold;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +9,7 @@ body {
 }
 
 select {
-  color: white;
+  color: gold;
   background-color: #C5A483;
 }
 select option {
