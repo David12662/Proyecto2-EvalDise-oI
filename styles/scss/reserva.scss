@@ -1,8 +1,7 @@
 
 $text-color: white;
 $background-color: #1e0b08;
-$form-bg-color: #C5A483;
-$text-color: gold;
+$form-bg-color: #3C3024;
 $border-radius: 5px;
 $spacing: 10px;
 $fontbody: "Teko", serif;
@@ -102,16 +101,15 @@ form {
   }
 
   [type="checkbox"] {
-    margin-left: 0;
-    margin-right: 5px;
-  }
+    margin-right: 3%;
+}
 
-  [class*="check"] {
+.form-check {
     display: flex;
     align-items: center;
     gap: 10px;
     flex-direction: row;
-  }
+}
 
   [type="submit"] {
     width: 100%;

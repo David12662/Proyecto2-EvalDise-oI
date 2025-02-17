@@ -211,14 +211,6 @@ body {
   background-size: 100%;
 }
 
-.instagram {
-  background-image: url("./images/logotipo-de-instagram.png");
-}
-
-.x {
-  background-image: url("images/x.png");
-}
-
 @media (max-width: 992px) {
   .menu {
     display: none;

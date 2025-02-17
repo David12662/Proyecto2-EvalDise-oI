@@ -17,27 +17,30 @@
 <body>
     <header>
         <nav class="navbar navbar-light py-4">
-            <div class="container d-flex justify-content-between">
+            <div class="container d-flex justify-content-between align-items-center">
+
                 <div>
-                    <a  href="../index.html">
+                    <a href="../index.html">
                         <img class="image-logo" src="../styles/images/logo.png" alt="Pirueta">
                     </a>
                 </div>
 
 
-                <div class="d-flex gap-5 menu">
+                <div class="d-none d-md-flex gap-5 menu">
                     <h1 class="nav-item">
                         <a class="nav-link" href="#" role="button">Menús</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Menu Del Dia</a></li>
                             <li><a class="dropdown-item" href="#">Menu De La Semana</a></li>
                             <li><a class="dropdown-item" href="#">Menu Del Mes</a></li>
+                        </ul>
                     </h1>
                     <h1 class="nav-item">
                         <a class="nav-link" href="#" role="button">Contacto</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Conócenos</a></li>
                             <li><a class="dropdown-item" href="#">¿Donde nos Ubicamos?</a></li>
+                        </ul>
                     </h1>
                     <h1 class="nav-item">
                         <a class="nav-link" href="./Carta.html" role="button">Cartas</a>
@@ -45,10 +48,12 @@
                             <li><a class="dropdown-item" href="Roma.html">Roma</a></li>
                             <li><a class="dropdown-item" href="#">São Paulo</a></li>
                             <li><a class="dropdown-item" href="Carta.html">El Cairo</a></li>
+                        </ul>
                     </h1>
                 </div>
 
-                <div>
+
+                <div class="d-block d-md-none">
                     <button class="menubutton" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas"
                         aria-controls="cartOffcanvas">
                     </button>
@@ -61,7 +66,9 @@
             <p class="ms-5">Pirueta El cairo</p>
             <div class="d-flex gap-5">
                 <p class="mx-5">Galeria</p>
-                <a href="Carta.html"><p class="mx-5">Carta</p></a>
+                <a href="Carta.html">
+                    <p class="mx-5">Carta</p>
+                </a>
             </div>
         </div>
         <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
@@ -125,8 +132,9 @@
                 <div class="d-flex text-white justify-content-around">
                     <div class="container">
                         <h3>Cómo llegar:</h3>
-                        <a class="mt-5 link" href="https://www.google.com/maps/place/Passeig+de+Nept%C3%BA,+Poblats+Mar%C3%ADtims,+46011+Val%C3%A8ncia/@39.4644423,-0.3248961,18z/data=!3m1!4b1!4m6!3m5!1s0xd60484210eeb6dd:0x67fadfdbc1d61a4b!8m2!3d39.4644406!4d-0.3238135!16s%2Fg%2F11xfpqs4_?hl=en&entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D" target="_blank"
-                            rel="noopener noreferrer">Passeig de Neptú</a>
+                        <a class="mt-5 link"
+                            href="https://www.google.com/maps/place/Passeig+de+Nept%C3%BA,+Poblats+Mar%C3%ADtims,+46011+Val%C3%A8ncia/@39.4644423,-0.3248961,18z/data=!3m1!4b1!4m6!3m5!1s0xd60484210eeb6dd:0x67fadfdbc1d61a4b!8m2!3d39.4644406!4d-0.3238135!16s%2Fg%2F11xfpqs4_?hl=en&entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank" rel="noopener noreferrer">Passeig de Neptú</a>
                         <div class="mt-5 hours">
                             <div class="text-center">
                                 <h2>Horarios</h2>
@@ -156,7 +164,7 @@
                                     .mapouter {
                                         position: relative;
                                         left: 25%;
-                        
+
                                         text-align: right;
                                         height: 575px;
                                         width: 700px;
@@ -169,8 +177,8 @@
                                         background: none !important;
                                         height: 575px;
                                         width: 700px;
-                                        border-radius: 10px; 
-                                        
+                                        border-radius: 10px;
+
                                     }
                                 </style>
                             </div>
@@ -200,46 +208,50 @@
         </div>
         <div class="mt-4 footerdivider"></div>
     </main>
-    <footer class="container text-center d-flex justify-content-between text-white mt-3 ">
-        <div>
-            <img class="image-logo" src="../styles/images/logo.png" alt="Pirueta">
-            <div class="d-flex justify-content-around mt-2  socialmedia">
-                <a class="instagram"></a>
-                <a class="x"></a>
+    <footer class="container text-center text-white mt-3">
+        <div class="row gy-4 justify-content-center">
+            <div class="col-12 col-md-4 col-lg-2 text-md-start">
+                <img class="image-logo" src="../styles/images/logo.png" alt="Pirueta">
+                <div class="d-flex justify-content-center justify-content-md-start mt-2 gap-3 socialmedia">
+                    <a href="#" class="social-icon instagram">
+                        <img class="socialmediaimg" src="../styles/images/logotipo-de-instagram.png"
+                            style="height: 50px; width: 50px;"></a>
+                    <a href="#" class="social-icon x"></a>
+                    <img class="socialmediaimg" src="../styles/images/x.png" style="height: 50px; width: 50px;"></a>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <h5>Contact</h5>
+                <p>Pirueta, Sa</p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <h5>Info</h5>
+                <p>Home</p>
+                <p>About</p>
+                <p>Shop</p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <h5>Categories</h5>
+                <p>Pantry Essential</p>
+                <p>Gourmet</p>
+                <p>Cocktail</p>
+                <p>Liquor</p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <h5>Account</h5>
+                <p>My Account</p>
+                <p>Cart</p>
+                <p>Checkout</p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <h5>The Fine Print</h5>
+                <p>Terms of Service</p>
+                <p>Privacy Policy</p>
+                <p>Delivery +</p>
+                <p>Payment</p>
             </div>
         </div>
-        <div>
-            <h3>Contact</h3>
-            <h6>Pirueta,Sa</h6>
-        </div>
-        <div>
-            <h3>Info</h3>
-            <h6>Home</h6>
-            <h6>About</h6>
-            <h6>Shop</h6>
-        </div>
-        <div>
-            <h3>Categories</h3>
-            <h6>Pantry Essential</h6>
-            <h6>Gourmet</h6>
-            <h6>CockTail</h6>
-            <h6>Liquor</h6>
-        </div>
-        <div>
-            <h3>Account</h3>
-            <h6>My account</h6>
-            <h6>Cart</h6>
-            <h6>Checkout</h6>
-        </div>
-        <div>
-            <h3>The Fine Print</h3>
-            <h6>Terms of Service</h6>
-            <h6>Privacy Policy</h6>
-            <h6>Delivery +</h6>
-            <h6>Payment</h6>
-        </div>
-
-
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

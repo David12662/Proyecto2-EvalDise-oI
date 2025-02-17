@@ -329,21 +329,29 @@ html {
 }
 
 .image-logo {
-  height: 70px;
+  height: 60px;
   mix-blend-mode: hard-light;
 }
 
-.socialmedia a {
-  height: 50px;
-  width: 50px;
-  background-size: 100%;
+.socialmedia {
+  display: flex;
+  gap: 10px;
 
-  .instagram {
-    background-image: url("../images/logotipo-de-instagram.png");
+  .social-icon {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    overflow: hidden; 
   }
 
-  .x {
-    background-image: url("../images/x.png");
-  }
 }
 
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+  
+  .socialmedia {
+    justify-content: center;
+  }
+}

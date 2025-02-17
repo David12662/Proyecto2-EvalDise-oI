@@ -1,165 +1,173 @@
-    <!doctype html>
-    <html lang="en">
+<!doctype html>
+<html lang="en">
 
-    <head>
-        <title>Pirueta</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+    <title>Pirueta</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="stylesheet" href="styles/index.css">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/index.css">
 
-    </head>
+</head>
 
-    <body data-bs-theme="dark">
-        <header>
-            <nav class="navbar navbar-light py-4">
-                <div class="container d-flex justify-content-between">
-
-                    <div>
-                        <a href="#">
-                            <img class="image-logo" src="./styles/images/logo.png" alt="Pirueta">
-                        </a>
-                    </div>
-
-
-                    <div class="d-flex gap-5 menu">
-                        <h1 class="nav-item">
-                            <a class="nav-link" href="#" role="button">Menús</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Menu Del Dia</a></li>
-                                <li><a class="dropdown-item" href="#">Menu De La Semana</a></li>
-                                <li><a class="dropdown-item" href="#">Menu Del Mes</a></li>
-                        </h1>
-                        <h1 class="nav-item">
-                            <a class="nav-link" href="#" role="button">Contacto</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Conócenos</a></li>
-                                <li><a class="dropdown-item" href="#">¿Donde nos Ubicamos?</a></li>
-                        </h1>
-                        <h1 class="nav-item">
-                            <a class="nav-link" href="#" role="button">Cartas</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="views/Roma.html">Roma</a></li>
-                                <li><a class="dropdown-item" href="#">São Paulo</a></li>
-                                <li><a class="dropdown-item" href="views/Carta.html">El Cairo</a></li>
-                        </h1>
-                    </div>
-
-                    <div>
-                        <button class="menubutton" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas"
-                            aria-controls="cartOffcanvas">
-                        </button>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <main class="container text-center mt-5">
-            <h1 class="mb-4 letters">Nuestros Restaurantes</h1>
-            <div class="row justify-content-center">
-                <div class="col-md-4">
-                    <a href="./views/Roma.html">
-                        <div class="restaurant-card">
-                            <img class="restaurant-img" src="styles/images/Italia.png" alt="Roma">
-                            <div class="restaurant-name">Roma</div>
-                        </div>
+<body data-bs-theme="dark">
+    <header>
+        <nav class="navbar navbar-light py-4">
+            <div class="container d-flex justify-content-between align-items-center">
+        
+                <div>
+                    <a href="../index.html">
+                        <img class="image-logo" src="../styles/images/logo.png" alt="Pirueta">
                     </a>
                 </div>
-                <div class="col-md-4">
-                    <a href="#">
-                        <div class="restaurant-card">
-                            <img class="restaurant-img" src="styles/images/SãoPaulo.png" alt="São Paulo">
-                            <div class="restaurant-name">São Paulo</div>
-                        </div>
-                    </a>
+
+            
+                <div class="d-none d-md-flex gap-5 menu">
+                    <h1 class="nav-item">
+                        <a class="nav-link" href="#" role="button">Menús</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Menu Del Dia</a></li>
+                            <li><a class="dropdown-item" href="#">Menu De La Semana</a></li>
+                            <li><a class="dropdown-item" href="#">Menu Del Mes</a></li>
+                        </ul>
+                    </h1>
+                    <h1 class="nav-item">
+                        <a class="nav-link" href="#" role="button">Contacto</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Conócenos</a></li>
+                            <li><a class="dropdown-item" href="#">¿Donde nos Ubicamos?</a></li>
+                        </ul>
+                    </h1>
+                    <h1 class="nav-item">
+                        <a class="nav-link" href="./views/Carta.html" role="button">Cartas</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./views/Roma.html">Roma</a></li>
+                            <li><a class="dropdown-item" href="#">São Paulo</a></li>
+                            <li><a class="dropdown-item" href="./views/Carta.html">El Cairo</a></li>
+                        </ul>
+                    </h1>
                 </div>
-                <div class="col-md-4">
-                    <a href="views/Elcairo.html">
-                        <div class="restaurant-card">
-                            <img class="restaurant-img" src="styles/images/Elcairo.png" alt="El Cairo">
-                            <div class="restaurant-name">El Cairo</div>
-                        </div>
-                    </a>
+
+                
+                <div class="d-block d-md-none">
+                    <button class="menubutton" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas"
+                        aria-controls="cartOffcanvas">
+                    </button>
                 </div>
             </div>
+        </nav>
+    </header>
 
-            <!--Offcanvas-->
-            <div class="offcanvas offcanvas-start custom-offcanvas" tabindex="-1" id="menuOffcanvas"
-                aria-labelledby="menuOffcanvasLabel">
-                <div class="offcanvas-body d-flex justify-content-between">
-                    <div class="d-flex align-content-between flex-wrap logo-section">
-                        <h2 class="logo">Pirueta</h2>
-                        <h2 class="terms">Terminos Y Condiciones</h2>
+    <main class="container text-center mt-5">
+        <h1 class="mb-4 letters">Nuestros Restaurantes</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <a href="./views/Roma.html">
+                    <div class="restaurant-card">
+                        <img class="restaurant-img" src="styles/images/Italia.png" alt="Roma">
+                        <div class="restaurant-name">Roma</div>
                     </div>
-
-                    <div class="divider"></div>
-
-                    <div class="ms-4 destinations">
-                        <a href="views/Roma.html" class="city">Roma</a>
-                        <a class="city">São Paulo</a>
-                        <a href="views/Elcairo.html" class="city">El cairo</a>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#">
+                    <div class="restaurant-card">
+                        <img class="restaurant-img" src="styles/images/SãoPaulo.png" alt="São Paulo">
+                        <div class="restaurant-name">São Paulo</div>
                     </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="views/Elcairo.html">
+                    <div class="restaurant-card">
+                        <img class="restaurant-img" src="styles/images/Elcairo.png" alt="El Cairo">
+                        <div class="restaurant-name">El Cairo</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!--Offcanvas-->
+        <div class="offcanvas offcanvas-start custom-offcanvas" tabindex="-1" id="menuOffcanvas"
+            aria-labelledby="menuOffcanvasLabel">
+            <div class="offcanvas-body d-flex justify-content-between">
+                <div class="d-flex align-content-between flex-wrap logo-section">
+                    <h2 class="logo">Pirueta</h2>
+                    <h2 class="terms">Terminos Y Condiciones</h2>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="ms-4 destinations">
+                    <a href="views/Roma.html" class="city">Roma</a>
+                    <a class="city">São Paulo</a>
+                    <a href="views/Elcairo.html" class="city">El cairo</a>
                 </div>
             </div>
-            </div>
-            <div class="text-center w-100 align-items-center text-center align-content-center mt-5 reserve">
-                <a class="link" href="./views/Reserva.html">Reservar</a>
-            </div>
-            <div class="mt-4 footerdivider"></div>
-        </main>
-        <footer class="container text-center d-flex justify-content-between mt-3 ">
-            <div>
-                <img class="image-logo" src="./styles/images/logo.png" alt="Pirueta">
-                <div class="d-flex justify-content-around mt-2  socialmedia">
-                    <a class="instagram"></a>
-                    <a class="x"></a>
+        </div>
+        </div>
+        <div class="text-center w-100 align-items-center text-center align-content-center mt-5 reserve">
+            <a class="link" href="./views/Reserva.html">Reservar</a>
+        </div>
+        <div class="mt-4 footerdivider"></div>
+    </main>
+    <footer class="container text-center text-white mt-3">
+        <div class="row gy-4 justify-content-center">
+            <div class="col-12 col-md-4 col-lg-2 text-md-start">
+                <img class="image-logo" src="../styles/images/logo.png" alt="Pirueta">
+                <div class="d-flex justify-content-center justify-content-md-start mt-2 gap-3 socialmedia">
+                    <a href="#" class="social-icon instagram">
+                        <img class="socialmediaimg" src="../styles/images/logotipo-de-instagram.png"
+                            style="height: 50px; width: 50px;"></a>
+                    <a href="#" class="social-icon x"></a>
+                    <img class="socialmediaimg" src="../styles/images/x.png" style="height: 50px; width: 50px;"></a>
                 </div>
             </div>
-            <div>
-                <h3>Contact</h3>
-                <h6>Pirueta,Sa</h6>
-            </div>
-            <div>
-                <h3>Info</h3>
-                <h6>Home</h6>
-                <h6>About</h6>
-                <h6>Shop</h6>
-            </div>
-            <div>
-                <h3>Categories</h3>
-                <h6>Pantry Essential</h6>
-                <h6>Gourmet</h6>
-                <h6>CockTail</h6>
-                <h6>Liquor</h6>
-            </div>
-            <div>
-                <h3>Account</h3>
-                <h6>My account</h6>
-                <h6>Cart</h6>
-                <h6>Checkout</h6>
-            </div>
-            <div>
-                <h3>The Fine Print</h3>
-                <h6>Terms of Service</h6>
-                <h6>Privacy Policy</h6>
-                <h6>Delivery +</h6>
-                <h6>Payment</h6>
-            </div>
 
+            <div class="col-6 col-md-4 col-lg-2">
+                <h5>Contact</h5>
+                <p>Pirueta, Sa</p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <h5>Info</h5>
+                <p>Home</p>
+                <p>About</p>
+                <p>Shop</p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <h5>Categories</h5>
+                <p>Pantry Essential</p>
+                <p>Gourmet</p>
+                <p>Cocktail</p>
+                <p>Liquor</p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <h5>Account</h5>
+                <p>My Account</p>
+                <p>Cart</p>
+                <p>Checkout</p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <h5>The Fine Print</h5>
+                <p>Terms of Service</p>
+                <p>Privacy Policy</p>
+                <p>Delivery +</p>
+                <p>Payment</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+        </script>
+    <script src="js/canvasanimation.js"></script>
 
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
-            </script>
-        <script src="js/canvasanimation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+        </script>
+</body>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
-            </script>
-    </body>
-
-    </html>
+</html>

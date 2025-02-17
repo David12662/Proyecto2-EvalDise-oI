@@ -17,38 +17,43 @@
 <body>
     <header>
         <nav class="navbar navbar-light py-4">
-            <div class="container d-flex justify-content-between">
+            <div class="container d-flex justify-content-between align-items-center">
+
                 <div>
-                    <a  href="../index.html">
+                    <a href="../index.html">
                         <img class="image-logo" src="../styles/images/logo.png" alt="Pirueta">
                     </a>
-                </div>
+                </div>  
 
 
-                <div class="d-flex gap-5 menu">
+                <div class="d-none d-md-flex gap-5 menu">
                     <h1 class="nav-item">
                         <a class="nav-link" href="#" role="button">Menús</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Menu Del Dia</a></li>
                             <li><a class="dropdown-item" href="#">Menu De La Semana</a></li>
                             <li><a class="dropdown-item" href="#">Menu Del Mes</a></li>
+                        </ul>
                     </h1>
                     <h1 class="nav-item">
                         <a class="nav-link" href="#" role="button">Contacto</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Conócenos</a></li>
                             <li><a class="dropdown-item" href="#">¿Donde nos Ubicamos?</a></li>
+                        </ul>
                     </h1>
                     <h1 class="nav-item">
-                        <a class="nav-link" href="" role="button">Cartas</a>
+                        <a class="nav-link" href="./Carta.html" role="button">Cartas</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="Roma.html">Roma</a></li>
                             <li><a class="dropdown-item" href="#">São Paulo</a></li>
                             <li><a class="dropdown-item" href="Carta.html">El Cairo</a></li>
+                        </ul>
                     </h1>
                 </div>
 
-                <div>
+                
+                <div class="d-block d-md-none">
                     <button class="menubutton" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas"
                         aria-controls="cartOffcanvas">
                     </button>
@@ -61,7 +66,9 @@
             <p class="ms-5">Pirueta Roma</p>
             <div class="d-flex gap-5">
                 <p class="mx-5">Galeria</p>
-                <a href="#"><p class="mx-5">Carta</p></a>
+                <a href="#">
+                    <p class="mx-5">Carta</p>
+                </a>
             </div>
         </div>
         <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
@@ -93,13 +100,26 @@
         <div>
             <div class="container text-center container1">
                 <h1>Te esperamos ven a vernos</h1>
-                <p>En el corazón de la Ciudad Eterna, donde las piedras milenarias susurran historias de emperadores y poetas, Pirueta Roma se alza como un santuario culinario dedicado a la auténtica gastronomía romana. Aquí, cada plato es un tributo a la tradición, cada ingrediente una oda al terruño italiano, y cada bocado un viaje a las tabernas que han alimentado a generaciones de romanos.
+                <p>En el corazón de la Ciudad Eterna, donde las piedras milenarias susurran historias de emperadores y
+                    poetas, Pirueta Roma se alza como un santuario culinario dedicado a la auténtica gastronomía romana.
+                    Aquí, cada plato es un tributo a la tradición, cada ingrediente una oda al terruño italiano, y cada
+                    bocado un viaje a las tabernas que han alimentado a generaciones de romanos.
 
-                    Nuestro menú está inspirado en las calles empedradas de Trastevere, en los bulliciosos mercados de Campo de' Fiori y en los antiguos banquetes del Foro Romano. Entre nuestras especialidades, encontrará la emblemática Cacio e Pepe, un sencillo pero sublime encuentro entre queso pecorino y pimienta negra sobre pasta artesanal; la Carbonara, elaborada a la manera tradicional con guanciale, yema de huevo y pecorino sin adulteraciones; y la suculenta Saltimbocca alla Romana, tiernas láminas de ternera envueltas en prosciutto y perfumadas con salvia fresca.
-                    
-                    En Trattoria Augusta, cuidamos cada detalle para transportarle a la esencia de Roma, desde la calidez de nuestra hospitalidad hasta la atmósfera que evoca las trattorias más icónicas de la ciudad. Con una selección de vinos de las colinas del Lazio y aperitivos inspirados en la dolce vita, su visita será mucho más que una comida: será una experiencia inmersiva en el alma culinaria de Italia.
-                    
-                    Descubra la magia de la cocina romana en su máxima expresión. Bienvenidos a Pirueta Roma, donde la tradición y el sabor eterno de Roma se encuentran en cada plato.</p>
+                    Nuestro menú está inspirado en las calles empedradas de Trastevere, en los bulliciosos mercados de
+                    Campo de' Fiori y en los antiguos banquetes del Foro Romano. Entre nuestras especialidades,
+                    encontrará la emblemática Cacio e Pepe, un sencillo pero sublime encuentro entre queso pecorino y
+                    pimienta negra sobre pasta artesanal; la Carbonara, elaborada a la manera tradicional con guanciale,
+                    yema de huevo y pecorino sin adulteraciones; y la suculenta Saltimbocca alla Romana, tiernas láminas
+                    de ternera envueltas en prosciutto y perfumadas con salvia fresca.
+
+                    En Trattoria Augusta, cuidamos cada detalle para transportarle a la esencia de Roma, desde la
+                    calidez de nuestra hospitalidad hasta la atmósfera que evoca las trattorias más icónicas de la
+                    ciudad. Con una selección de vinos de las colinas del Lazio y aperitivos inspirados en la dolce
+                    vita, su visita será mucho más que una comida: será una experiencia inmersiva en el alma culinaria
+                    de Italia.
+
+                    Descubra la magia de la cocina romana en su máxima expresión. Bienvenidos a Pirueta Roma, donde la
+                    tradición y el sabor eterno de Roma se encuentran en cada plato.</p>
             </div>
             <div class="container text-center text-white container2 mt-5 ">
                 <h3>Te esperamos</h3>
@@ -111,8 +131,9 @@
                 <div class="d-flex text-white justify-content-around">
                     <div class="container">
                         <h3>Cómo llegar:</h3>
-                        <a class="mt-5 link" href="https://www.google.es/maps/@39.4704475,-0.3572413,109m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D" target="_blank"
-                            rel="noopener noreferrer">C. Chile, 9-5</a>
+                        <a class="mt-5 link"
+                            href="https://www.google.es/maps/@39.4704475,-0.3572413,109m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank" rel="noopener noreferrer">C. Chile, 9-5</a>
                         <div class="mt-5 hours">
                             <div class="text-center">
                                 <h2>Horarios</h2>
@@ -134,7 +155,7 @@
 
                         <div class="mapouter justify-content-center d-flex align-items-center mt-5">
                             <div class="gmap_canvas"><iframe width="815" height="575" id="gmap_canvas"
-                                src="https://maps.google.com/maps?q=C.+Chile+Valencia&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                    src="https://maps.google.com/maps?q=C.+Chile+Valencia&t=&z=13&ie=UTF8&iwloc=&output=embed"
                                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
                                     href="https://online-timer.me/"></a><br><a
                                     href="https://online.stopwatch-timer.net/"></a><br>
@@ -142,7 +163,7 @@
                                     .mapouter {
                                         position: relative;
                                         left: 25%;
-                        
+
                                         text-align: right;
                                         height: 575px;
                                         width: 700px;
@@ -155,8 +176,8 @@
                                         background: none !important;
                                         height: 575px;
                                         width: 700px;
-                                        border-radius: 10px; 
-                                        
+                                        border-radius: 10px;
+
                                     }
                                 </style>
                             </div>
@@ -179,53 +200,59 @@
                 <div class="ms-4 destinations">
                     <a href="Roma.html" class="city">Roma</a>
                     <a class="city">São Paulo</a>
-                    <a href="#" class="city">El cairo</a>
+                    <a href="./Elcairo.html" class="city">El cairo</a>
                 </div>
             </div>
         </div>
         </div>
         <div class="mt-4 footerdivider"></div>
     </main>
-    <footer class="container text-center d-flex justify-content-between text-white mt-3 ">
-        <div>
-            <img class="image-logo" src="../styles/images/logo.png" alt="Pirueta">
-            <div class="d-flex justify-content-around mt-2  socialmedia">
-                <a class="instagram"></a>
-                <a class="x"></a>
+    <footer class="container text-center text-white mt-3">
+        <div class="row gy-4 justify-content-center">
+            <!-- Logo y Redes Sociales -->
+            <div class="col-12 col-md-4 col-lg-2 text-md-start">
+                <img class="image-logo" src="../styles/images/logo.png" alt="Pirueta">
+                <div class="d-flex justify-content-center justify-content-md-start mt-2 gap-3 socialmedia">
+                    <a href="#" class="social-icon instagram">
+                        <img class="socialmediaimg" src="../styles/images/logotipo-de-instagram.png"
+                            style="height: 50px; width: 50px;"></a>
+                    <a href="#" class="social-icon x"></a>
+                    <img class="socialmediaimg" src="../styles/images/x.png" style="height: 50px; width: 50px;"></a>
+                </div>
+            </div>
+
+            <!-- Secciones del Footer -->
+            <div class="col-6 col-md-4 col-lg-2">
+                <h5>Contact</h5>
+                <p>Pirueta, Sa</p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <h5>Info</h5>
+                <p>Home</p>
+                <p>About</p>
+                <p>Shop</p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <h5>Categories</h5>
+                <p>Pantry Essential</p>
+                <p>Gourmet</p>
+                <p>Cocktail</p>
+                <p>Liquor</p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <h5>Account</h5>
+                <p>My Account</p>
+                <p>Cart</p>
+                <p>Checkout</p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <h5>The Fine Print</h5>
+                <p>Terms of Service</p>
+                <p>Privacy Policy</p>
+                <p>Delivery +</p>
+                <p>Payment</p>
             </div>
         </div>
-        <div>
-            <h3>Contact</h3>
-            <h6>Pirueta,Sa</h6>
-        </div>
-        <div>
-            <h3>Info</h3>
-            <h6>Home</h6>
-            <h6>About</h6>
-            <h6>Shop</h6>
-        </div>
-        <div>
-            <h3>Categories</h3>
-            <h6>Pantry Essential</h6>
-            <h6>Gourmet</h6>
-            <h6>CockTail</h6>
-            <h6>Liquor</h6>
-        </div>
-        <div>
-            <h3>Account</h3>
-            <h6>My account</h6>
-            <h6>Cart</h6>
-            <h6>Checkout</h6>
-        </div>
-        <div>
-            <h3>The Fine Print</h3>
-            <h6>Terms of Service</h6>
-            <h6>Privacy Policy</h6>
-            <h6>Delivery +</h6>
-            <h6>Payment</h6>
-        </div>
-
-
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

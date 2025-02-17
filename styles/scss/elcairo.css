@@ -263,7 +263,7 @@ body, html {
 }
 
 .image-logo {
-  height: 70px;
+  height: 60px;
   mix-blend-mode: hard-light;
 }
 
@@ -274,6 +274,8 @@ body, html {
 }
 .socialmedia a .instagram {
   background-image: url("../images/logotipo-de-instagram.png");
+  height: 50px;
+  width: 50px;
 }
 .socialmedia a .x {
   background-image: url("../images/x.png");
