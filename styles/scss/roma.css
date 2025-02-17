@@ -284,19 +284,4 @@ html {
 .socialmedia {
   display: flex;
   gap: 10px;
-}
-.socialmedia .social-icon {
-  display: inline-block;
-  height: 50px;
-  width: 50px;
-  overflow: hidden;
-}
-
-@media (max-width: 768px) {
-  footer {
-    text-align: center;
-  }
-  .socialmedia {
-    justify-content: center;
-  }
 }/*# sourceMappingURL=roma.css.map */
