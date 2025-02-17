@@ -70,7 +70,7 @@ main {
   border-radius: 5px;
   color: white;
   font-size: 16px;
-  cursor: pointer;
+  cursor: crosshair;
   transition: background-color 0.3s ease-in-out, transform 0.2s ease, box-shadow 0.3s ease;
   margin-top: 20px;
 }
